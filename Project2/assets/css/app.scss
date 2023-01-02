@@ -5,6 +5,15 @@ $barnd-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
   0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 $brand-light-beige: #aba097;
 $brand-yellowish: #b1a285;
+$brand-purple: #93c;
+$brand-blue: #0d47a1;
+
+@mixin background($height) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: $height;
+}
 
 body,
 h1,
@@ -82,11 +91,12 @@ small {
     box-shadow: $barnd-shadow;
 
     .carousel-item {
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      @include background(70vh);
+      // background-position: center;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // height: 70vh;
       background-attachment: scroll;
-      height: 70vh;
 
       .carousel-overlay {
         height: 100%;
@@ -152,6 +162,55 @@ small {
 
       p {
         font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+#frontLatest {
+  background-color: lighten($color: $brand-light-beige, $amount: 25%);
+
+  .latest-posts,
+  .latest-reviews {
+    &-header {
+      padding-left: 0.5rem;
+      border-left: 0.5rem solid $brand-purple;
+
+      h4 {
+        color: $brand-purple;
+      }
+    }
+
+    .latest-post,
+    .latest-review {
+      margin-bottom: 1rem;
+      border: 0;
+      box-shadow: $barnd-shadow;
+
+      &-featured {
+        @include background(13rem);
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // height: 13rem;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+
+      &-text {
+        a {
+          text-decoration: none;
+          color: $brand-blue;
+
+          &:hover {
+            color: lighten($color: $brand-blue, $amount: 20%);
+          }
+        }
+
+        p {
+          font-size: 1.1rem;
+          font-weight: lighter;
+        }
       }
     }
   }

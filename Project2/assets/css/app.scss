@@ -9,6 +9,7 @@ $brand-purple: #93c;
 $brand-blue: #0d47a1;
 $rgba-white-strong: rgba(255, 255, 255, 0.7);
 $brand-red: #c00;
+$brand-beige: #807060;
 
 @mixin background($height) {
   background-position: center;
@@ -244,6 +245,41 @@ small {
     &:hover {
       background-color: #fff;
       box-shadow: $barnd-shadow;
+    }
+  }
+}
+
+#footer {
+  background-color: $brand-beige;
+  color: #fff;
+
+  .nav-footer {
+    a {
+      font-size: 1.1rem;
+    }
+  }
+
+  .footer-informations {
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+
+    .social {
+      margin-top: 0.75rem;
+      display: inline-block;
+
+      img {
+        width: 2.25rem;
+        border-radius: 0.5rem;
+      }
+    }
+
+    .copyright {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin-top: 1rem;
     }
   }
 }

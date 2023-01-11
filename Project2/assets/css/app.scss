@@ -10,12 +10,18 @@ $brand-blue: #0d47a1;
 $rgba-white-strong: rgba(255, 255, 255, 0.7);
 $brand-red: #c00;
 $brand-beige: #807060;
-
-@mixin background($height) {
+$rgba-black-light: rgba(0, 0, 0, 0.35);
+@mixin background($height: 60vh) {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: $height;
+}
+
+@mixin overlay($bgColor: $rgba-black-light) {
+  height: 100%;
+  width: 100%;
+  background-color: $bgColor;
 }
 
 body,
@@ -281,5 +287,23 @@ small {
       font-weight: 300;
       margin-top: 1rem;
     }
+  }
+}
+
+// page
+#topBanner {
+  @include background();
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: $barnd-shadow;
+
+  .overlay {
+    @include overlay();
+    // height: 100%;
+    // width: 100%;
+    // background-color: $rgba-black-light;
+    color: #fff;
+    border-radius: 0.75rem;
   }
 }

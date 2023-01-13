@@ -307,3 +307,37 @@ small {
     border-radius: 0.75rem;
   }
 }
+
+#blogContent {
+  .grid-item {
+    .card {
+      margin-bottom: 1rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: $barnd-shadow;
+        transform: translateY(-8px);
+      }
+
+      .post-featured {
+        @include background(12rem);
+      }
+
+      .post-text {
+        .img-avatar {
+          width: 18px;
+          border-radius: 50%;
+        }
+      }
+
+      a {
+        color: $brand-blue;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: lighten($color: $brand-blue, $amount: 20%);
+        }
+      }
+    }
+  }
+}

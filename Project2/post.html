@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post | My Second Web</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header id="header" class="wrapper">
+      <section id="navTop" class="nav-top py-2 d-none d-md-block">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-3 text-start lead fast-counsel">
+              <a href="#" class="btn btn-outline-dark">Contact</a>
+            </div>
+            <div class="col-4 logo">
+              <a href="index.html" class="navbar-brand d-flex">
+                <img
+                  src="assets/images/dummy-logo.png"
+                  alt=""
+                  class="img-fluid ms-auto"
+                  width="200px"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="My amazing website!!"
+                />
+              </a>
+            </div>
+            <div class="col-5 text-end socials">
+              <a href="#" class="mx-1 text-decoration-none">
+                <img
+                  src="assets/images/icon-phone.png"
+                  alt="phone"
+                  width="40px"
+                  class="shadow-box"
+                />
+              </a>
+              <a href="#" class="mx-1 text-decoration-none">
+                <img
+                  src="assets/images/icon-kakao-channel.png"
+                  alt="kakao channel"
+                  width="40px"
+                  class="shadow-box"
+                />
+              </a>
+              <a href="#" class="mx-1 text-decoration-none">
+                <img
+                  src="assets/images/icon-facebook.png"
+                  alt="facebook"
+                  width="40px"
+                  class="shadow-box"
+                />
+              </a>
+              <a href="#" class="mx-1 text-decoration-none">
+                <img
+                  src="assets/images/icon-twitter.png"
+                  alt="twitter"
+                  width="40px"
+                  class="shadow-box"
+                />
+              </a>
+              <a href="#" class="mx-1 text-decoration-none">
+                <img
+                  src="assets/images/icon-youtube.png"
+                  alt="youtube"
+                  width="40px"
+                  class="shadow-box"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav id="navPrimary" class="navbar navbar-expand-md navbar-dark">
+        <div class="container-xxl">
+          <a class="navbar-brand d-block d-md-none" href="index.html">
+            <img
+              src="assets/images/dummy-logo.png"
+              alt="logo"
+              class="img-fluid"
+            />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navPrimaryContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Intro
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="page.html">About us</a>
+                  </li>
+                  <li><a class="dropdown-item" href="page.html">Find us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page.html">Documents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html" aria-current="page"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page.html">Reservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-secondary" href="#"
+                  ><i class="fa fa-search"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            class="btn btn-outline-secondary d-block d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end d-block d-md-none"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvasRightLabel">My second web</h5>
+              <button
+                class="btn-close text-reset"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-unstyled mobile-menu">
+                <li>
+                  <a href="index.html" class="text-decoration-none link-dark"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="page.html" class="text-decoration-none link-dark"
+                    >Intro</a
+                  >
+                  <ul class="list-unstyled ms-3">
+                    <li>
+                      <a href="page.html" class="text-decoration-none link-dark"
+                        >About us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="page.html" class="text-decoration-none link-dark"
+                        >Find us</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="page.html"
+                    class="text-decoration-none link-dark active"
+                    >Documents</a
+                  >
+                </li>
+                <li>
+                  <a href="page.html" class="text-decoration-none link-dark"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="page.html" class="text-decoration-none link-dark"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="page.html" class="text-decoration-none link-dark"
+                    >Events</a
+                  >
+                </li>
+                <li>
+                  <a href="page.html" class="text-decoration-none link-dark"
+                    >Reviews</a
+                  >
+                </li>
+                <li>
+                  <a href="page.html" class="text-decoration-none link-dark"
+                    >Reservation</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-secondary w-100"
+                    ><i class="fa fa-search"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="topBanner"
+      class="mx-3"
+      style="background-image: url('./assets/images/blog.jpg')"
+    >
+      <div
+        class="section-content overlay d-flex justify-content-center align-items-center"
+      >
+        <div class="container">
+          <div class="text-center">
+            <h1 class="display-4">Post title</h1>
+            <h4 class="fw-light">Post subtitle</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="postContent">
+      <div class="section-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9">
+              <div
+                class="post-meta text-center mb-5 border-top border-bottom py-2"
+              >
+                <span class="text-muted fw-light">
+                  <img
+                    src="./assets/images/avatar.png"
+                    alt="avatar"
+                    class="img-avatar"
+                  />
+                  CodingDIY | <i class="fas fa-calendar-alt"></i> 2021-8-24 |
+                  <i class="fas fa-folder-open"></i> Category1 |
+                  <i class="fas fa-tags"></i> Tag1, Tag2
+                </span>
+              </div>
+
+              <article>
+                <p class="lead fat-italic text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos temporibus voluptas impedit consectetur eum
+                  officia fugit dicta consequatur sunt voluptates!
+                </p>
+                <img
+                  src="./assets/images/project-4.jpg"
+                  alt=""
+                  class="img-fluid my-3"
+                />
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Expedita hic placeat atque asperiores odit dolor, repudiandae
+                  adipisci ab necessitatibus nemo. Quibusdam deserunt iste nemo,
+                  voluptas quis fugit ducimus voluptatum esse libero labore
+                  sequi et hic soluta facilis rerum, eligendi explicabo,
+                  mollitia cum quod? Saepe, sapiente. Veniam delectus porro
+                  aliquid error.
+                </p>
+                <br />
+                <h1 class="display-5 text-center mb-3">
+                  This is display-5 heading
+                </h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
+                  architecto odio incidunt possimus quae inventore similique
+                  temporibus aliquam nam accusantium!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci ut mollitia exercitationem quas nam blanditiis
+                  aliquid dolores molestias, repellat fugiat veniam fuga, sint
+                  deserunt reprehenderit sed accusamus ratione explicabo unde!
+                </p>
+                <br />
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p>This is a beautiful blockquote element.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    This paragraph is written in famous Book.
+                  </figcaption>
+                </figure>
+                <br />
+                <h3 class="mb-3">This is heading 4</h3>
+                <img
+                  src="./assets/images/port2.jpg"
+                  alt=""
+                  class="img-fluid float-md-start d-block mx-auto me-md-4 mb-4 mt-1 shadow"
+                  width="400px"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                  nulla impedit, atque a corporis, mollitia eligendi modi
+                  suscipit nemo molestiae iste ex pariatur officiis vitae
+                  veniam. Deleniti possimus eius facere, molestiae voluptatibus
+                  nesciunt, iure praesentium asperiores, nulla nam quasi
+                  similique sequi vero? Asperiores sunt explicabo harum neque
+                  assumenda. Voluptatem iste enim cupiditate vitae
+                  necessitatibus blanditiis ipsam recusandae vel, nesciunt
+                  incidunt, est magni aliquid culpa quasi magnam impedit
+                  doloremque dolore adipisci quidem. Ducimus a praesentium
+                  molestiae, recusandae rerum esse necessitatibus sunt velit vel
+                  explicabo harum reiciendis error omnis cum eaque eveniet
+                  cupiditate delectus accusamus eligendi molestias voluptatibus?
+                  Dolorem repudiandae est alias!
+                </p>
+                <br />
+                <h3 class="mb-3">This is heading 4</h3>
+                <img
+                  src="./assets/images/port3.jpg"
+                  alt=""
+                  class="img-fluid float-md-end d-block mx-auto ms-md-4 mb-4 mt-1 shadow"
+                  width="300px"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  iste illum qui porro delectus aperiam labore sunt rem quam
+                  voluptatem cumque autem, aut nesciunt omnis, esse corporis ex,
+                  voluptates expedita vel doloribus. Iusto autem deserunt totam
+                  temporibus, soluta corrupti illo velit perferendis quia
+                  veritatis, minus expedita laborum nam quibusdam nisi earum
+                  maiores, distinctio porro qui dolore nobis. Dolorem blanditiis
+                  optio suscipit odit animi fugit tempora nihil, atque laborum!
+                  Consequatur dolorem quisquam quod sint nemo exercitationem non
+                  officiis neque? Fugiat, voluptatum?
+                </p>
+                <br />
+                <h1 class="display-5 text-center mb-3">
+                  This is second display-5 heading
+                </h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Distinctio eveniet voluptates nisi facilis non vero unde,
+                  animi nesciunt, recusandae totam architecto corporis, eligendi
+                  repudiandae impedit? Omnis, est! Praesentium, sed illum!
+                  Reiciendis quidem fugiat vel, necessitatibus suscipit quis
+                  consequuntur ab, debitis sed ipsum, inventore libero. Sapiente
+                  omnis obcaecati doloribus dicta cum, adipisci unde accusantium
+                  repudiandae repellendus autem provident similique optio
+                  dignissimos consequuntur. Aliquid adipisci voluptas ipsum
+                  explicabo vel reprehenderit molestiae illo accusamus, sunt
+                  illum quam nesciunt, dicta, pariatur consequuntur! Recusandae
+                  perspiciatis autem veniam atque culpa quam adipisci itaque
+                  quas! Debitis cum labore laborum quidem tenetur perspiciatis
+                  aliquam tempore maiores quibusdam, sit doloremque explicabo
+                  corrupti sunt, pariatur mollitia incidunt! Saepe explicabo
+                  omnis qui nam unde nulla fugiat illum, sapiente eum nostrum.
+                  Itaque voluptate veritatis quidem quo excepturi iusto
+                  dignissimos corporis. Deleniti repellendus eius architecto!
+                  Consequatur ad exercitationem ea eius laudantium, facilis
+                  sapiente, pariatur voluptatum officiis mollitia adipisci
+                  repellendus! Ab et tempora aperiam?
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="section-content">
+        <div class="container">
+          <div class="nav-footer">
+            <a href="page.html" class="link-light text-decoration-none fw-light"
+              >Privacy policy</a
+            >
+            |
+            <a href="page.html" class="link-light text-decoration-none fw-light"
+              >Teroms of use</a
+            >
+            |
+            <a href="page.html" class="link-light text-decoration-none fw-light"
+              >Business hour</a
+            >
+          </div>
+          <hr class="hr-white" />
+          <div class="row align-items-center">
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+              <img
+                src="./assets/images/dummy-logo.png"
+                alt="Logo"
+                class="img-fluid"
+                width="200px"
+              />
+            </div>
+            <div class="col-md-9 footer-informations">
+              <p>
+                <strong>My BS5 Web</strong> | CEO Name: Gil-dong Hong | Business
+                No: 111-11-11111 | TEL: 02-111-1111 <br />
+                Address: 11-111 Gil-dong Jung-gu Seoul Korea <br />
+              </p>
+              <a
+                href="tel:02-111-1111"
+                class="mx-1 text-decoration-none social"
+              >
+                <img
+                  src="./assets/images/icon-phone.png"
+                  alt="phone"
+                  class="shadow-box"
+                  width="48px"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="#"
+                class="mx-1 text-decoration-none social"
+              >
+                <img
+                  src="./assets/images/icon-facebook.png"
+                  alt="facebook"
+                  class="shadow-box"
+                  width="48px"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="#"
+                class="mx-1 text-decoration-none social"
+              >
+                <img
+                  src="./assets/images/icon-kakao-channel.png"
+                  alt="kakao channel"
+                  class="shadow-box"
+                  width="48px"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="#"
+                class="mx-1 text-decoration-none social"
+              >
+                <img
+                  src="./assets/images/icon-twitter.png"
+                  alt="twitter"
+                  class="shadow-box"
+                  width="48px"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="#"
+                class="mx-1 text-decoration-none social"
+              >
+                <img
+                  src="./assets/images/icon-youtube.png"
+                  alt="youtube"
+                  class="shadow-box"
+                  width="48px"
+                />
+              </a>
+              <br />
+              <span class="copyright"
+                >Copyright &copy; My BS5 web - Amazing website.
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                . All rights Reserved. | Designed by
+                <span class="text-warning">CodingDIY</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=60bc66583835a0ab0828284826abdf8d"
+    ></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

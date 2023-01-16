@@ -269,4 +269,9 @@ small {
 }
 #blogContent .grid-item .card a:hover {
   color: #2674ee;
+}
+
+#postContent .post-meta .img-avatar {
+  width: 24px;
+  border-radius: 50%;
 }/*# sourceMappingURL=app.css.map */

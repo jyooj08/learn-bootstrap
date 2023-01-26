@@ -1,0 +1,6 @@
+// Media query mixins
+@mixin meadiaSm {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}

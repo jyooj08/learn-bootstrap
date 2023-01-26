@@ -29,6 +29,10 @@ td {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.shadow-xl {
+  box-shadow: 0 1rem 2.5rem -0.8rem rgba(0, 0, 0, 0.56), 0 0.25rem 1.5rem rgba(0, 0, 0, 0.12), 0 0.5rem 0.75rem -0.3rem rgba(0, 0, 0, 0.2);
+}
+
 .navbar a.active {
   color: yellowgreen !important;
 }
@@ -74,4 +78,26 @@ td {
 #navbarModalContent .mobile-menu li a.current {
   font-weight: 700;
   color: #000;
+}
+
+#carousel-front-slides #outer-slide {
+  filter: blur(4px);
+}
+#carousel-front-slides #inner-slide {
+  top: 15%;
+  bottom: 15%;
+}
+
+@media screen and (max-width: 767px) {
+  #carousel-front-slides .carousel-item {
+    height: 60vh;
+  }
+  #carousel-front-slides .carousel-item #outer-slide {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
 }/*# sourceMappingURL=main.css.map */

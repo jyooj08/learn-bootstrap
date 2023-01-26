@@ -1,0 +1,26 @@
+// Carousel
+#carousel-front-slides {
+  #outer-slide {
+    filter: blur(4px);
+  }
+
+  #inner-slide {
+    top: 15%;
+    bottom: 15%;
+  }
+}
+
+@include meadiaSm {
+  #carousel-front-slides {
+    .carousel-item {
+      height: 60vh;
+
+      #outer-slide {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

@@ -7,6 +7,19 @@
   }
   .navbar-nav {
     .nav-item {
+      &.dropdown-wide {
+        position: static;
+
+        .dropdown-menu.w-75 {
+          margin-top: -0.5rem;
+          left: 50%;
+          transform: translateX(-50%) !important;
+
+          #mega-menu {
+            padding: 0 0.6rem;
+          }
+        }
+      }
       .nav-link {
         color: #fff;
         text-align: center;

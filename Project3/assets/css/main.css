@@ -33,6 +33,34 @@ td {
   box-shadow: 0 1rem 2.5rem -0.8rem rgba(0, 0, 0, 0.56), 0 0.25rem 1.5rem rgba(0, 0, 0, 0.12), 0 0.5rem 0.75rem -0.3rem rgba(0, 0, 0, 0.2);
 }
 
+.section-content {
+  padding: 4rem 0;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.divider::before, .divider::after {
+  content: "";
+  height: 0.15rem;
+  background: #666;
+  flex: 1;
+}
+.divider::before {
+  margin: 0 0.45rem 0 0;
+}
+.divider::after {
+  margin: 0 0 0 0.45rem;
+}
+
+#shadow-box {
+  transition: 0.5s ease-in-out;
+}
+
 .navbar a.active {
   color: yellowgreen !important;
 }
@@ -86,6 +114,11 @@ td {
 #carousel-front-slides #inner-slide {
   top: 15%;
   bottom: 15%;
+}
+
+#section-info {
+  background-image: url("../images/tile.jpg");
+  background-repeat: repeat;
 }
 
 @media screen and (max-width: 767px) {

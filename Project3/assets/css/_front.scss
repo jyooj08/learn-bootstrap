@@ -10,6 +10,12 @@
   }
 }
 
+// Front info section
+#section-info {
+  background-image: url("../images/tile.jpg");
+  background-repeat: repeat;
+}
+
 @include meadiaSm {
   #carousel-front-slides {
     .carousel-item {

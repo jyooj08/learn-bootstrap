@@ -69,6 +69,10 @@ td {
   color: purple;
 }
 
+hr.hr-white {
+  border-top: 1px solid #fff;
+}
+
 .navbar a.active {
   color: yellowgreen !important;
 }
@@ -172,4 +176,22 @@ td {
     -o-object-position: center;
        object-position: center;
   }
+}
+.footer {
+  background-color: #e0edf0;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer .social-icons .twitter-link {
+  color: #00aced;
+}
+.footer .social-icons .facebook-link {
+  color: #3b5998;
+}
+.footer .social-icons .youtube-link {
+  color: #cc181e;
+}
+.footer .copyright {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=main.css.map */

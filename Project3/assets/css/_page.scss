@@ -27,3 +27,25 @@
     }
   }
 }
+
+#aboutus {
+  .image-lightbox {
+    .col img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: rotate(-10deg) scale(1.05, 1.05);
+        opacity: 1;
+      }
+
+      &:hover img {
+        opacity: 0.6;
+        transform: scale(0.9, 0.9);
+      }
+    }
+  }
+}

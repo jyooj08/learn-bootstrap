@@ -237,4 +237,22 @@ hr.hr-white {
 }
 #brand-history .brand-content:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+#aboutus .image-lightbox .col img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.3s ease-in-out;
+}
+#aboutus .image-lightbox .col img:hover {
+  transform: rotate(-10deg) scale(1.05, 1.05);
+  opacity: 1;
+}
+#aboutus .image-lightbox .col img:hover img {
+  opacity: 0.6;
+  transform: scale(0.9, 0.9);
 }/*# sourceMappingURL=main.css.map */

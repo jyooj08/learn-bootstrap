@@ -224,4 +224,17 @@ hr.hr-white {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#ceo {
+  background-repeat: repeat;
+}
+
+#brand-history {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#brand-history .brand-content:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }/*# sourceMappingURL=main.css.map */

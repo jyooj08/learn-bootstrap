@@ -255,4 +255,9 @@ hr.hr-white {
 #aboutus .image-lightbox .col img:hover img {
   opacity: 0.6;
   transform: scale(0.9, 0.9);
+}
+#aboutus .faq .accordion-button:not(.collapsed) {
+  color: purple;
+  font-weight: bold;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */

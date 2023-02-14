@@ -365,4 +365,7 @@ hr.hr-white {
 }
 #blog-main .card-footer {
   background-color: transparent;
+}
+#blog-main aside a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

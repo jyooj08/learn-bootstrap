@@ -35,6 +35,18 @@ td {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.rgba-blue-grey-slight {
+  background-color: rgba(96, 125, 129, 0.1);
+}
+
+.rgba-blue-grey-light {
+  background-color: rgba(96, 125, 129, 0.35);
+}
+
+.rgba-blue-grey-strong {
+  background-color: rgba(96, 125, 129, 0.7);
+}
+
 .shadow-xl {
   box-shadow: 0 1rem 2.5rem -0.8rem rgba(0, 0, 0, 0.56),
     0 0.25rem 1.5rem rgba(0, 0, 0, 0.12),

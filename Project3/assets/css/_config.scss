@@ -86,3 +86,17 @@ hr {
     border-top: 1px solid #fff;
   }
 }
+
+.form-control {
+  border-radius: 20px;
+
+  &:focus {
+    border: 1px solid #9933cc;
+    box-shadow: none;
+  }
+}
+
+::placeholder {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}

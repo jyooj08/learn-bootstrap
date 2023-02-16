@@ -28,3 +28,17 @@
     }
   }
 }
+
+#post-content,
+#related-posts {
+  a {
+    text-decoration: none;
+  }
+}
+
+#related-posts {
+  .image-raised {
+    margin: -1.5rem 0.625rem 0;
+    transform: scale(0.9);
+  }
+}
